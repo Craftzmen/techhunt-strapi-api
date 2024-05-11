@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "companies",
+  "info": {
+    "singularName": "company",
+    "pluralName": "companies",
+    "displayName": "Companies",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Link": {
+      "type": "text"
+    },
+    "Country": {
+      "type": "enumeration",
+      "enum": [
+        "Pakistan",
+        "United Kingdom"
+      ]
+    },
+    "Employees": {
+      "type": "biginteger"
+    }
+  }
+}
